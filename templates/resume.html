@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="about">
+        <h1 class="mt-5">About Me:</h1><br>
+        <div>
+            <img class="my_image" src="{{ image }}" width="800" height="600" alt="Shubham">
+            <p>I am an aspiring <strong>Back-End Web Developer</strong>.<br>
+                I have chosen this as my career path owing to my keen interest and deep -learning paths available ahead. <br>
+                I am looking forward to starting my journey, acquiring new skills, and getting better at the skills (already acquainted with).
+            </p>
+        </div>
+        <a class="btn btn-dark btn-lg mt-5" href="{{ url_for('download') }}" role="button">Download Resume</a>
+    </div>
+{% endblock content %}
