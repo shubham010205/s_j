@@ -1,6 +1,5 @@
 import os
 from flask import Flask, render_template, url_for, send_file
-from models import db
 
 
 app = Flask(__name__)
@@ -30,4 +29,5 @@ def contact():
 @app.route("/resume/download")
 def download():
     path = os.path.join(app.root_path, "static/resume/resume.pdf")
-    return send_file(path_or_file=path, as_attachment=True, download_name="Shubham_Joshi_Resume.pdf")
+    return send_file(path_or_file=path, as_attachment=True, 
+                            download_name="Shubham_Joshi_Resume.pdf")
